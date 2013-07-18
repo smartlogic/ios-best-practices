@@ -8,13 +8,18 @@
 
 #import "AppDelegate.h"
 
+#import "WidgetsViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    WidgetsViewController *widgetsViewController = [[WidgetsViewController alloc] init];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:widgetsViewController];
+    self.window.rootViewController = self.navigationController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
