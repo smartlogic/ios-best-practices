@@ -2,8 +2,9 @@
 *.swp
 *~.nib
 
-build/
-test-reports/
+BohConfDemo/build/
+BohConfDemo/test-reports/
+BohConfDemo/Pods/
 
 *.pbxuser
 *.perspective

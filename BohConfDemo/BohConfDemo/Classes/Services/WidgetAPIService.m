@@ -1,13 +1,13 @@
 //
-//  BohConfDemoTests.h
-//  BohConfDemoTests
+//  WidgetAPIService.m
+//  BohConfDemo
 //
 //  Created by Tom von Schwerdtner on 7/17/13.
 //  Copyright (c) 2013 Tom von Schwerdtner. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import "WidgetAPIService.h"
 
-@interface BohConfDemoTests : SenTestCase
+@implementation WidgetAPIService
 
 @end
