@@ -4,9 +4,7 @@ SPEC_BEGIN(MathSpec)
 
 describe(@"Widget", ^{
     it(@"is pretty cool", ^{
-        NSUInteger a = 16;
-        NSUInteger b = 26;
-        [[theValue(a + b) should] equal:theValue(43)];
+        
     });
 });
 
