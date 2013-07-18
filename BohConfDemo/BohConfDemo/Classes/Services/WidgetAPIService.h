@@ -12,6 +12,7 @@
 
 @interface WidgetAPIService : NSObject
 
++ (void)getWidgets:(void (^)(NSMutableArray *))successBlock;
 + (void)getWidget:(NSInteger)wid success:(void (^)(Widget *))successBlock;
 
 @end

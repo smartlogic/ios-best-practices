@@ -6,7 +6,6 @@
 
 SPEC_BEGIN(WidgetAPIServiceSpec)
 
-
 beforeEach(^{
     [[LSNocilla sharedInstance] start];
 });
@@ -27,6 +26,14 @@ describe(@"WidgetAPIService", ^{
         withHeaders(@{@"Content-Type": @"application/json"}).
         withBody(response);
         
+        // NOTE: It would be less error-prone to generate an NSDictionary and convert that to JSON and then an NSString
+        NSString *listResponse = @"[{\"id\":1,\"name\":\"First Title\",\"description\":\"First Description\"},{\"id\":1,\"name\":\"Second Title\",\"description\":\"Second Description\"}]";
+        
+        stubRequest(@"GET", @"http://localhost:3000/widgets.json").
+        andReturn(201).
+        withHeaders(@{@"Content-Type": @"application/json"}).
+        withBody(listResponse);
+        
     });
     
     it(@"Can fetch a widget by id", ^{
@@ -40,6 +47,23 @@ describe(@"WidgetAPIService", ^{
         [[expectFutureValue(result) shouldEventually] beNonNil];
         [[expectFutureValue(result.name) shouldEventually] equal:@"Sample Title"];
         [[expectFutureValue(result.text) shouldEventually] equal:@"Sample Description"];
+        
+    });
+    
+    it(@"Can fetch a list of widgets", ^{
+        
+        __block NSMutableArray *result = nil;
+        __block Widget *widget = nil;
+        
+        [WidgetAPIService getWidgets:^(NSMutableArray *widgets) {
+            result = widgets;
+            widget = [result lastObject];
+        }];
+        
+        [[expectFutureValue(result) shouldEventually] haveCountOf:2];
+        
+        [[expectFutureValue(widget.name) shouldEventually] equal:@"Second Title"];
+        [[expectFutureValue(widget.text) shouldEventually] equal:@"Second Description"];
         
     });
 });
