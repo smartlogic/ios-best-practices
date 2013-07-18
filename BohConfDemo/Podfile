@@ -1,0 +1,7 @@
+platform :ios
+
+pod "AFNetworking", "~> 1.3"
+
+target :KiwiUnitTest, :exclusive => true do
+    pod "Kiwi"
+end

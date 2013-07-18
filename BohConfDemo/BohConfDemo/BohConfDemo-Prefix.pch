@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'BohConfDemo' target in the 'BohConfDemo' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
