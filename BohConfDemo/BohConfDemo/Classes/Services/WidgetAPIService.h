@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import "Widget.h"
+
 @interface WidgetAPIService : NSObject
+
++ (void)getWidget:(NSInteger)wid success:(void (^)(Widget *))successBlock;
 
 @end

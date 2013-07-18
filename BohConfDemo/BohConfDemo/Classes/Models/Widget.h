@@ -10,4 +10,7 @@
 
 @interface Widget : NSObject
 
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *text;
+
 @end
