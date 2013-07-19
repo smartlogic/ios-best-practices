@@ -1,29 +1,15 @@
-//
-//  WidgetCell.m
-//  BohConfDemo
-//
-//  Created by Tom von Schwerdtner on 7/18/13.
-//  Copyright (c) 2013 Tom von Schwerdtner. All rights reserved.
-//
 
 #import "WidgetCell.h"
 
+#import "Widget.h"
+
 @implementation WidgetCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+- (void)configure:(Widget *)widget
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    self.nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)];
+    self.nameLabel.text = widget.name;
+    [self addSubview:self.nameLabel];
 }
 
 @end

@@ -24,13 +24,21 @@
 		0F30BC5617977C8F00252B29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F30BC5417977C8F00252B29 /* InfoPlist.strings */; };
 		0F30BC6417977CA700252B29 /* Widget.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30BC6317977CA700252B29 /* Widget.m */; };
 		0F30BC6517977CA700252B29 /* Widget.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30BC6317977CA700252B29 /* Widget.m */; };
-		0F30BC6917977F6300252B29 /* WidgetSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30BC6817977F6300252B29 /* WidgetSpec.m */; };
 		0F30BCBE179781C700252B29 /* WidgetAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30BCBD179781C700252B29 /* WidgetAPIService.m */; };
 		0F30BCBF179781C700252B29 /* WidgetAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30BCBD179781C700252B29 /* WidgetAPIService.m */; };
 		0F30BCC1179781E700252B29 /* WidgetAPIServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30BCC0179781E700252B29 /* WidgetAPIServiceSpec.m */; };
 		0F30BCC417978D4A00252B29 /* NSDate+Timestamps.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30BCC317978D4A00252B29 /* NSDate+Timestamps.m */; };
 		0F30BCC517978D4A00252B29 /* NSDate+Timestamps.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30BCC317978D4A00252B29 /* NSDate+Timestamps.m */; };
 		0F30BCC817978E4200252B29 /* NSDateTimestampsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30BCC717978E4200252B29 /* NSDateTimestampsSpec.m */; };
+		0F35276517982575004DF058 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F35276417982575004DF058 /* SystemConfiguration.framework */; };
+		0F35276717982579004DF058 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F35276617982579004DF058 /* MobileCoreServices.framework */; };
+		0F35276A179827D2004DF058 /* WidgetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F352769179827D2004DF058 /* WidgetsViewController.m */; };
+		0F35276B179827D2004DF058 /* WidgetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F352769179827D2004DF058 /* WidgetsViewController.m */; };
+		0F35277317982A02004DF058 /* WidgetsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F35277217982A01004DF058 /* WidgetsTableDataSource.m */; };
+		0F35277417982A02004DF058 /* WidgetsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F35277217982A01004DF058 /* WidgetsTableDataSource.m */; };
+		0F35277C179880D2004DF058 /* WidgetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F35277B179880D2004DF058 /* WidgetCell.m */; };
+		0F35277D179880D2004DF058 /* WidgetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F35277B179880D2004DF058 /* WidgetCell.m */; };
+		0F352785179889E2004DF058 /* WidgetsTableDataSourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F352784179889E2004DF058 /* WidgetsTableDataSourceSpec.m */; };
 		6427F8A0C5BC4BE9B9A20B75 /* libPods-BohConfDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0246C27291E6407E9CB5E4D5 /* libPods-BohConfDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -64,15 +72,23 @@
 		0F30BC4B17977C8F00252B29 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		0F30BC5317977C8F00252B29 /* BohConfDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BohConfDemoTests-Info.plist"; sourceTree = "<group>"; };
 		0F30BC5517977C8F00252B29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0F30BC6217977CA700252B29 /* Widget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Widget.h; path = Classes/Models/Widget.h; sourceTree = "<group>"; };
-		0F30BC6317977CA700252B29 /* Widget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Widget.m; path = Classes/Models/Widget.m; sourceTree = "<group>"; };
-		0F30BC6817977F6300252B29 /* WidgetSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WidgetSpec.m; path = Models/WidgetSpec.m; sourceTree = "<group>"; };
-		0F30BCBC179781C700252B29 /* WidgetAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WidgetAPIService.h; path = Classes/Services/WidgetAPIService.h; sourceTree = "<group>"; };
-		0F30BCBD179781C700252B29 /* WidgetAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WidgetAPIService.m; path = Classes/Services/WidgetAPIService.m; sourceTree = "<group>"; };
-		0F30BCC0179781E700252B29 /* WidgetAPIServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WidgetAPIServiceSpec.m; path = Services/WidgetAPIServiceSpec.m; sourceTree = "<group>"; };
-		0F30BCC217978D4A00252B29 /* NSDate+Timestamps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Timestamps.h"; path = "Classes/Categories/NSDate+Timestamps.h"; sourceTree = "<group>"; };
-		0F30BCC317978D4A00252B29 /* NSDate+Timestamps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Timestamps.m"; path = "Classes/Categories/NSDate+Timestamps.m"; sourceTree = "<group>"; };
+		0F30BC6217977CA700252B29 /* Widget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Widget.h; sourceTree = "<group>"; };
+		0F30BC6317977CA700252B29 /* Widget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Widget.m; sourceTree = "<group>"; };
+		0F30BCBC179781C700252B29 /* WidgetAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetAPIService.h; sourceTree = "<group>"; };
+		0F30BCBD179781C700252B29 /* WidgetAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetAPIService.m; sourceTree = "<group>"; };
+		0F30BCC0179781E700252B29 /* WidgetAPIServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetAPIServiceSpec.m; sourceTree = "<group>"; };
+		0F30BCC217978D4A00252B29 /* NSDate+Timestamps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Timestamps.h"; sourceTree = "<group>"; };
+		0F30BCC317978D4A00252B29 /* NSDate+Timestamps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Timestamps.m"; sourceTree = "<group>"; };
 		0F30BCC717978E4200252B29 /* NSDateTimestampsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateTimestampsSpec.m; path = Categories/NSDateTimestampsSpec.m; sourceTree = "<group>"; };
+		0F35276417982575004DF058 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0F35276617982579004DF058 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0F352768179827D2004DF058 /* WidgetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetsViewController.h; sourceTree = "<group>"; };
+		0F352769179827D2004DF058 /* WidgetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetsViewController.m; sourceTree = "<group>"; };
+		0F35277117982A01004DF058 /* WidgetsTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetsTableDataSource.h; sourceTree = "<group>"; };
+		0F35277217982A01004DF058 /* WidgetsTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetsTableDataSource.m; sourceTree = "<group>"; };
+		0F35277A179880D2004DF058 /* WidgetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetCell.h; sourceTree = "<group>"; };
+		0F35277B179880D2004DF058 /* WidgetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetCell.m; sourceTree = "<group>"; };
+		0F352784179889E2004DF058 /* WidgetsTableDataSourceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetsTableDataSourceSpec.m; sourceTree = "<group>"; };
 		9CAD9B864DF04CF689EEAFBE /* Pods-BohConfDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BohConfDemoTests.xcconfig"; path = "Pods/Pods-BohConfDemoTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		DD6F588745844C87A4CEBCF0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2805FFD5E3E4ECE9F1857B9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -83,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F35276717982579004DF058 /* MobileCoreServices.framework in Frameworks */,
+				0F35276517982575004DF058 /* SystemConfiguration.framework in Frameworks */,
 				0F30BC1E17977C8F00252B29 /* UIKit.framework in Frameworks */,
 				0F30BC2017977C8F00252B29 /* Foundation.framework in Frameworks */,
 				0F30BC2217977C8F00252B29 /* CoreGraphics.framework in Frameworks */,
@@ -128,6 +146,8 @@
 		0F30BC1C17977C8F00252B29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F35276617982579004DF058 /* MobileCoreServices.framework */,
+				0F35276417982575004DF058 /* SystemConfiguration.framework */,
 				0F30BC1D17977C8F00252B29 /* UIKit.framework */,
 				0F30BC1F17977C8F00252B29 /* Foundation.framework */,
 				0F30BC2117977C8F00252B29 /* CoreGraphics.framework */,
@@ -141,6 +161,7 @@
 		0F30BC2317977C8F00252B29 /* BohConfDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0F35276C17982978004DF058 /* Delegates */,
 				0F30BCBB1797818400252B29 /* Services */,
 				0F30BC2C17977C8F00252B29 /* AppDelegate.h */,
 				0F30BC2D17977C8F00252B29 /* AppDelegate.m */,
@@ -175,20 +196,26 @@
 				0F30BCC317978D4A00252B29 /* NSDate+Timestamps.m */,
 			);
 			name = Categories;
+			path = Classes/Categories;
 			sourceTree = "<group>";
 		};
 		0F30BC3C17977C8F00252B29 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0F35277517987389004DF058 /* Cells */,
 			);
 			name = Views;
+			path = Classes/Views;
 			sourceTree = "<group>";
 		};
 		0F30BC3F17977C8F00252B29 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0F352768179827D2004DF058 /* WidgetsViewController.h */,
+				0F352769179827D2004DF058 /* WidgetsViewController.m */,
 			);
 			name = Controllers;
+			path = Classes/Controllers;
 			sourceTree = "<group>";
 		};
 		0F30BC4217977C8F00252B29 /* Models */ = {
@@ -198,13 +225,15 @@
 				0F30BC6317977CA700252B29 /* Widget.m */,
 			);
 			name = Models;
+			path = Classes/Models;
 			sourceTree = "<group>";
 		};
 		0F30BC5117977C8F00252B29 /* BohConfDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				0F352783179889C2004DF058 /* Delegates */,
 				0F30BCC617978E2400252B29 /* Categories */,
-				0F30BC6617977F4C00252B29 /* Models */,
+				0F30BC6617977F4C00252B29 /* Services */,
 				0F30BC5217977C8F00252B29 /* Supporting Files */,
 			);
 			path = BohConfDemoTests;
@@ -219,13 +248,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0F30BC6617977F4C00252B29 /* Models */ = {
+		0F30BC6617977F4C00252B29 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0F30BC6817977F6300252B29 /* WidgetSpec.m */,
 				0F30BCC0179781E700252B29 /* WidgetAPIServiceSpec.m */,
 			);
-			name = Models;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		0F30BCBB1797818400252B29 /* Services */ = {
@@ -235,6 +263,7 @@
 				0F30BCBD179781C700252B29 /* WidgetAPIService.m */,
 			);
 			name = Services;
+			path = Classes/Services;
 			sourceTree = "<group>";
 		};
 		0F30BCC617978E2400252B29 /* Categories */ = {
@@ -243,6 +272,33 @@
 				0F30BCC717978E4200252B29 /* NSDateTimestampsSpec.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		0F35276C17982978004DF058 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				0F35277117982A01004DF058 /* WidgetsTableDataSource.h */,
+				0F35277217982A01004DF058 /* WidgetsTableDataSource.m */,
+			);
+			name = Delegates;
+			path = Classes/Delegates;
+			sourceTree = "<group>";
+		};
+		0F35277517987389004DF058 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0F35277A179880D2004DF058 /* WidgetCell.h */,
+				0F35277B179880D2004DF058 /* WidgetCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0F352783179889C2004DF058 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				0F352784179889E2004DF058 /* WidgetsTableDataSourceSpec.m */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,6 +480,9 @@
 				0F30BC6417977CA700252B29 /* Widget.m in Sources */,
 				0F30BCBE179781C700252B29 /* WidgetAPIService.m in Sources */,
 				0F30BCC417978D4A00252B29 /* NSDate+Timestamps.m in Sources */,
+				0F35276A179827D2004DF058 /* WidgetsViewController.m in Sources */,
+				0F35277317982A02004DF058 /* WidgetsTableDataSource.m in Sources */,
+				0F35277C179880D2004DF058 /* WidgetCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +491,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F30BC6517977CA700252B29 /* Widget.m in Sources */,
-				0F30BC6917977F6300252B29 /* WidgetSpec.m in Sources */,
 				0F30BCBF179781C700252B29 /* WidgetAPIService.m in Sources */,
 				0F30BCC1179781E700252B29 /* WidgetAPIServiceSpec.m in Sources */,
 				0F30BCC517978D4A00252B29 /* NSDate+Timestamps.m in Sources */,
 				0F30BCC817978E4200252B29 /* NSDateTimestampsSpec.m in Sources */,
+				0F35276B179827D2004DF058 /* WidgetsViewController.m in Sources */,
+				0F35277417982A02004DF058 /* WidgetsTableDataSource.m in Sources */,
+				0F35277D179880D2004DF058 /* WidgetCell.m in Sources */,
+				0F352785179889E2004DF058 /* WidgetsTableDataSourceSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
