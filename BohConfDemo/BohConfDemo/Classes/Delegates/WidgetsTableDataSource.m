@@ -13,10 +13,11 @@
     return self;
 }
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    WidgetCell *cell = [tableView dequeueReusableCellWithIdentifier:WidgetCellIdentifier forIndexPath:indexPath];
+    WidgetCell *cell = [tableView dequeueReusableCellWithIdentifier:WidgetCellIdentifier
+                                                       forIndexPath:indexPath];
     [cell configure:[self.items objectAtIndex:indexPath.row]];
     return cell;
 }
