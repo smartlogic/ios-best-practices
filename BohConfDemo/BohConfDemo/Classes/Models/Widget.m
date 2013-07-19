@@ -10,4 +10,9 @@
 
 @implementation Widget
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"Widget\n\tname:%@\n\ttext:%@", self.name, self.text];
+}
+
 @end
