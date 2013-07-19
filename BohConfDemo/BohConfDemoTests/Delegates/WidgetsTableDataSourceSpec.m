@@ -6,7 +6,7 @@
 
 SPEC_BEGIN(WidgetsTableDataSourceSpec)
 
-describe(@"WidgeetsTableDataSource", ^{
+describe(@"WidgetsTableDataSource", ^{
     it(@"Configures WidgetsCells based on Widgets available", ^{
         UITableView *tableView = [[UITableView alloc] init];
         WidgetsTableDataSource *dataSource = [[WidgetsTableDataSource alloc] init];
