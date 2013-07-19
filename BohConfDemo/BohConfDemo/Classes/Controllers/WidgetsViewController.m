@@ -15,16 +15,17 @@
 {
     [super viewDidLoad];
     
-    self.view = [[UITableView alloc] initWithFrame:self.view.frame];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:self.tableView];
     
-    [(UITableView *)self.view registerClass:[WidgetCell class] forCellReuseIdentifier:WidgetCellIdentifier];
+    [self.tableView registerClass:[WidgetCell class] forCellReuseIdentifier:WidgetCellIdentifier];
     
     self.dataSource = [[WidgetsTableDataSource alloc] init];
-    ((UITableView *)self.view).dataSource = self.dataSource;
+    self.tableView.dataSource = self.dataSource;
     
     [WidgetAPIService getWidgets:^(NSMutableArray *widgets) {
         self.dataSource.items = widgets;
-        [(UITableView *)self.view reloadData];
+        [self.tableView reloadData];
     }];
     
 }
